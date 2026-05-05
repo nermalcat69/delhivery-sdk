@@ -72,12 +72,15 @@ export class HttpClient {
 
     let response: Response;
     try {
-      response = await fetch(url, {
+      const fetchInit: RequestInit = {
         method,
         headers: requestHeaders,
-        body: bodyPayload,
         signal: controller.signal,
-      });
+      };
+      if (bodyPayload !== undefined) {
+        fetchInit.body = bodyPayload;
+      }
+      response = await fetch(url, fetchInit);
     } catch (err) {
       throw new DelhiveryNetworkError(
         `Network request failed: ${String(err)}`,
@@ -129,7 +132,11 @@ export class HttpClient {
     path: string,
     params?: Record<string, string | number | boolean | undefined>,
   ): Promise<T> {
-    return this.request<T>(path, { method: "GET", params });
+    const options: RequestOptions = { method: "GET" };
+    if (params !== undefined) {
+      options.params = params;
+    }
+    return this.request<T>(path, options);
   }
 
   post<T>(path: string, body: Record<string, unknown> | string): Promise<T> {
@@ -147,6 +154,10 @@ export class HttpClient {
     path: string,
     params?: Record<string, string | number | boolean | undefined>,
   ): Promise<ArrayBuffer> {
-    return this.request<ArrayBuffer>(path, { method: "GET", params, binary: true });
+    const options: RequestOptions = { method: "GET", binary: true };
+    if (params !== undefined) {
+      options.params = params;
+    }
+    return this.request<ArrayBuffer>(path, options);
   }
 }
