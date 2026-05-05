@@ -1,3 +1,0 @@
-# This file is intentionally minimal — the docs site has moved to its own repo.
-# See apps/docs/wrangler.toml for the Cloudflare Pages config.
-name = "delhivery-sdk"

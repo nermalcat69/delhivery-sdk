@@ -1,8 +1,6 @@
-# Delhivery SDK
+# delhivery-sdk
 
 TypeScript SDK for the [Delhivery B2C API](https://one.delhivery.com/developer-portal).
-
-**Docs → [delhivery-sdk.pages.dev](https://delhivery-sdk.pages.dev)**
 
 ## Install
 
@@ -17,7 +15,6 @@ import { DelhiveryClient } from "delhivery-sdk";
 
 const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN! });
 
-// Check serviceability
 const [s] = await client.serviceability.check({
   origin_pin: "400001",
   destination_pin: "560001",
@@ -25,7 +22,6 @@ const [s] = await client.serviceability.check({
   weight: 0.5,
 });
 
-// Create an order
 const res = await client.orders.create([{
   client_order_id: "ORD-001",
   order: "2024-06-01",
@@ -42,7 +38,6 @@ const res = await client.orders.create([{
   country: "India",
 }]);
 
-// Track it
 const tracking = await client.tracking.trackOne(res.packages[0]!.waybill);
 console.log(tracking.ShipmentData[0]?.Shipment.Status);
 ```
@@ -59,14 +54,16 @@ console.log(tracking.ShipmentData[0]?.Shipment.Status);
 | `client.ndr` | NDR actions, reverse pickup QC |
 | `client.documents` | Download labels, invoices, PODs |
 
-## Packages
+## Sandbox
 
-| Package | Description |
-|---|---|
-| [`packages/sdk`](./packages/sdk) | `delhivery-sdk` — TypeScript SDK |
-| [`apps/docs`](./apps/docs) | Docusaurus documentation site |
+```typescript
+import { DelhiveryClient, STAGING_BASE_URL } from "delhivery-sdk";
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) to work on this repo.
+const client = new DelhiveryClient({
+  token: process.env.DELHIVERY_STAGING_TOKEN!,
+  baseUrl: STAGING_BASE_URL,
+});
+```
 
 ## License
 
