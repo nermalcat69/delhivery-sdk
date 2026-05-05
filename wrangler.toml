@@ -2,7 +2,7 @@ name = "delhivery-sdk"
 pages_build_output_dir = "apps/docs/build"
 
 [build]
-command = "pnpm install --frozen-lockfile && pnpm --filter docs build"
+command = "pnpm install && pnpm --filter docs build"
 
 [build.environment]
 NODE_VERSION = "20"
