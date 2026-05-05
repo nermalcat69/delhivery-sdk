@@ -1,9 +1,10 @@
 name = "delhivery-sdk"
-pages_build_output_dir = "apps/docs/build"
+pages_build_output_dir = "build"
 
 [build]
-command = "pnpm install && pnpm --filter docs build"
+command = "pnpm install && pnpm build"
 
 [build.environment]
 NODE_VERSION = "20"
 PNPM_VERSION = "9"
+SKIP_DEPENDENCY_INSTALL = "1"
