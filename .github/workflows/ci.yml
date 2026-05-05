@@ -30,6 +30,3 @@ jobs:
 
       - name: Build SDK
         run: pnpm --filter delhivery-sdk build
-
-      - name: Typecheck docs
-        run: pnpm --filter docs typecheck

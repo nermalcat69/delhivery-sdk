@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "pnpm -r run build",
-    "dev": "pnpm --filter docs dev",
-    "lint": "pnpm -r run lint",
-    "typecheck": "pnpm -r run typecheck",
-    "test": "pnpm -r run test"
+    "build": "pnpm --filter delhivery-sdk build",
+    "lint": "pnpm --filter delhivery-sdk lint",
+    "typecheck": "pnpm --filter delhivery-sdk typecheck",
+    "test": "pnpm --filter delhivery-sdk test"
   },
   "devDependencies": {
     "typescript": "^5.4.5"
