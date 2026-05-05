@@ -8,7 +8,7 @@ TypeScript SDK + documentation website for the [Delhivery B2C API](https://one.d
 
 | Package | Description |
 |---|---|
-| [`packages/sdk`](./packages/sdk) | `@delhivery-sdk/client` — TypeScript SDK |
+| [`packages/sdk`](./packages/sdk) | `delhivery-sdk` — TypeScript SDK |
 | [`apps/docs`](./apps/docs) | Docusaurus documentation site |
 
 ## Development
@@ -34,7 +34,7 @@ pnpm dev
 ### Build SDK
 
 ```bash
-pnpm --filter @delhivery-sdk/client build
+pnpm --filter delhivery-sdk build
 ```
 
 ### Build docs

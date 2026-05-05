@@ -23,7 +23,7 @@ Delhivery sends a `POST` request with a JSON body. The payload can be a single o
 
 ```typescript
 import express from "express";
-import type { WebhookEvent } from "@delhivery-sdk/client";
+import type { WebhookEvent } from "delhivery-sdk";
 
 const app = express();
 app.use(express.json());

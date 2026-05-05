@@ -26,10 +26,10 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Typecheck SDK
-        run: pnpm --filter @delhivery-sdk/client typecheck
+        run: pnpm --filter delhivery-sdk typecheck
 
       - name: Build SDK
-        run: pnpm --filter @delhivery-sdk/client build
+        run: pnpm --filter delhivery-sdk build
 
       - name: Typecheck docs
         run: pnpm --filter docs typecheck

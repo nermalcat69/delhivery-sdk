@@ -64,7 +64,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://www.npmjs.com/package/@delhivery-sdk/client",
+          href: "https://www.npmjs.com/package/delhivery-sdk",
           label: "npm",
           position: "right",
         },
@@ -94,7 +94,7 @@ const config: Config = {
             },
             {
               label: "npm",
-              href: "https://www.npmjs.com/package/@delhivery-sdk/client",
+              href: "https://www.npmjs.com/package/delhivery-sdk",
             },
           ],
         },

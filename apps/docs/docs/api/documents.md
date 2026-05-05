@@ -26,7 +26,7 @@ Download a document (shipping label, invoice, manifest, or proof of delivery) as
 
 ```typescript
 import { writeFileSync } from "fs";
-import { DelhiveryClient } from "@delhivery-sdk/client";
+import { DelhiveryClient } from "delhivery-sdk";
 
 const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN! });
 

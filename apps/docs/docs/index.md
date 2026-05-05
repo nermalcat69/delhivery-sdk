@@ -23,7 +23,7 @@ A fully-typed TypeScript SDK for the [Delhivery B2C API](https://one.delhivery.c
 ## Quick example
 
 ```typescript
-import { DelhiveryClient } from "@delhivery-sdk/client";
+import { DelhiveryClient } from "delhivery-sdk";
 
 const client = new DelhiveryClient({ token: "YOUR_API_TOKEN" });
 

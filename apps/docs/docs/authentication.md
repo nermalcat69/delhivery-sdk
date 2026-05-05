@@ -30,7 +30,7 @@ Never hard-code API tokens. Use environment variables:
 DELHIVERY_TOKEN=your_token_here
 
 // client setup
-import { DelhiveryClient } from "@delhivery-sdk/client";
+import { DelhiveryClient } from "delhivery-sdk";
 
 const client = new DelhiveryClient({
   token: process.env.DELHIVERY_TOKEN!,
@@ -42,7 +42,7 @@ const client = new DelhiveryClient({
 If your token is wrong or expired the SDK throws `DelhiveryAuthError`:
 
 ```typescript
-import { DelhiveryClient, DelhiveryAuthError } from "@delhivery-sdk/client";
+import { DelhiveryClient, DelhiveryAuthError } from "delhivery-sdk";
 
 try {
   const result = await client.tracking.trackOne("ABC123");

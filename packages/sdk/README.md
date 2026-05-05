@@ -1,4 +1,4 @@
-# @delhivery-sdk/client
+# delhivery-sdk
 
 TypeScript SDK for the [Delhivery B2C API](https://one.delhivery.com/developer-portal).
 
@@ -7,15 +7,15 @@ TypeScript SDK for the [Delhivery B2C API](https://one.delhivery.com/developer-p
 ## Install
 
 ```bash
-npm install @delhivery-sdk/client
+npm install delhivery-sdk
 # or
-pnpm add @delhivery-sdk/client
+pnpm add delhivery-sdk
 ```
 
 ## Quick start
 
 ```typescript
-import { DelhiveryClient } from "@delhivery-sdk/client";
+import { DelhiveryClient } from "delhivery-sdk";
 
 const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN! });
 

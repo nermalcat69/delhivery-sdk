@@ -18,7 +18,7 @@ The SDK provides TypeScript types for the webhook payload so you can type your h
 ## Payload type
 
 ```typescript
-import type { WebhookEvent } from "@delhivery-sdk/client";
+import type { WebhookEvent } from "delhivery-sdk";
 ```
 
 | Field | Type | Description |
@@ -36,7 +36,7 @@ import type { WebhookEvent } from "@delhivery-sdk/client";
 
 ```typescript
 import express from "express";
-import type { WebhookEvent } from "@delhivery-sdk/client";
+import type { WebhookEvent } from "delhivery-sdk";
 
 const app = express();
 app.use(express.json());

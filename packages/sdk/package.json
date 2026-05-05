@@ -1,5 +1,5 @@
 {
-  "name": "@delhivery-sdk/client",
+  "name": "delhivery-sdk",
   "version": "0.1.0",
   "description": "TypeScript SDK for the Delhivery B2C API",
   "keywords": ["delhivery", "shipping", "logistics", "sdk", "typescript"],

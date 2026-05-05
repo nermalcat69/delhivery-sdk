@@ -14,19 +14,19 @@ sidebar_position: 2
 
 ```bash
 # npm
-npm install @delhivery-sdk/client
+npm install delhivery-sdk
 
 # yarn
-yarn add @delhivery-sdk/client
+yarn add delhivery-sdk
 
 # pnpm
-pnpm add @delhivery-sdk/client
+pnpm add delhivery-sdk
 ```
 
 ## Usage (ESM / TypeScript)
 
 ```typescript
-import { DelhiveryClient } from "@delhivery-sdk/client";
+import { DelhiveryClient } from "delhivery-sdk";
 
 const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN! });
 ```
@@ -34,7 +34,7 @@ const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN! });
 ## Usage (CommonJS)
 
 ```javascript
-const { DelhiveryClient } = require("@delhivery-sdk/client");
+const { DelhiveryClient } = require("delhivery-sdk");
 
 const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN });
 ```
@@ -42,7 +42,7 @@ const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN });
 ## Sandbox vs production
 
 ```typescript
-import { DelhiveryClient, STAGING_BASE_URL } from "@delhivery-sdk/client";
+import { DelhiveryClient, STAGING_BASE_URL } from "delhivery-sdk";
 
 const client = new DelhiveryClient({
   token: process.env.DELHIVERY_STAGING_TOKEN!,

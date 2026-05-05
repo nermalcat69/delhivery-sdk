@@ -1,7 +1,7 @@
 # Delhivery SDK — Full Reference
 
 > TypeScript SDK for the Delhivery B2C logistics API.
-> Package: `@delhivery-sdk/client`
+> Package: `delhivery-sdk`
 > Repo: https://github.com/delhivery-sdk/delhivery-sdk
 > Docs: https://delhivery-sdk.github.io
 
@@ -10,9 +10,9 @@
 ## Installation
 
 ```bash
-npm install @delhivery-sdk/client
-# yarn add @delhivery-sdk/client
-# pnpm add @delhivery-sdk/client
+npm install delhivery-sdk
+# yarn add delhivery-sdk
+# pnpm add delhivery-sdk
 ```
 
 Requires Node.js >= 18 (uses native `fetch`). Works in any environment with the Fetch API (Node 18+, Bun, Deno, Cloudflare Workers, browsers — though exposing tokens client-side is not recommended).
@@ -22,7 +22,7 @@ Requires Node.js >= 18 (uses native `fetch`). Works in any environment with the 
 ## Client Construction
 
 ```typescript
-import { DelhiveryClient, STAGING_BASE_URL } from "@delhivery-sdk/client";
+import { DelhiveryClient, STAGING_BASE_URL } from "delhivery-sdk";
 
 // Production
 const client = new DelhiveryClient({ token: "YOUR_API_TOKEN" });
@@ -284,7 +284,7 @@ Fields: `waybill`, `status`, `"Status DateTime"`, `City`, `"Scan Type"`, `Scan`,
 Common status values: `Manifested`, `In Transit`, `Out for Delivery`, `Delivered`, `NDR`, `RTO Initiated`, `RTO Delivered`, `Lost`
 
 ```typescript
-import type { WebhookEvent } from "@delhivery-sdk/client";
+import type { WebhookEvent } from "delhivery-sdk";
 
 app.post("/webhooks/delhivery", (req, res) => {
   res.sendStatus(200); // always respond quickly
@@ -299,7 +299,7 @@ app.post("/webhooks/delhivery", (req, res) => {
 
 ## Error Handling
 
-All errors are exported from `@delhivery-sdk/client`:
+All errors are exported from `delhivery-sdk`:
 
 | Class | Condition |
 |---|---|
@@ -309,7 +309,7 @@ All errors are exported from `@delhivery-sdk/client`:
 | `DelhiveryNetworkError` | Network/timeout failure — has `.cause` |
 
 ```typescript
-import { DelhiveryAuthError, DelhiveryNetworkError, DelhiveryError } from "@delhivery-sdk/client";
+import { DelhiveryAuthError, DelhiveryNetworkError, DelhiveryError } from "delhivery-sdk";
 
 try {
   await client.tracking.trackOne("WB001");

@@ -10,7 +10,7 @@ This guide walks through the end-to-end flow for shipping a Prepaid order.
 ## Step 1 — Set up the client
 
 ```typescript
-import { DelhiveryClient } from "@delhivery-sdk/client";
+import { DelhiveryClient } from "delhivery-sdk";
 
 const client = new DelhiveryClient({
   token: process.env.DELHIVERY_TOKEN!,

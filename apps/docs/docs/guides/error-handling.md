@@ -16,7 +16,7 @@ The SDK throws typed errors that you can catch and inspect.
 | `DelhiveryRateLimitError` | 429 — too many requests |
 | `DelhiveryNetworkError` | Network failure (timeout, DNS, etc.) |
 
-All classes are exported from `@delhivery-sdk/client`.
+All classes are exported from `delhivery-sdk`.
 
 ## Catching specific errors
 
@@ -27,7 +27,7 @@ import {
   DelhiveryRateLimitError,
   DelhiveryNetworkError,
   DelhiveryError,
-} from "@delhivery-sdk/client";
+} from "delhivery-sdk";
 
 const client = new DelhiveryClient({ token: process.env.DELHIVERY_TOKEN! });
 
