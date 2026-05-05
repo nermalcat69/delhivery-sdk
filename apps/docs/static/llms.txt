@@ -1,0 +1,39 @@
+# Delhivery SDK
+
+> TypeScript SDK for the Delhivery B2C logistics API. Zero runtime dependencies, native fetch, dual ESM/CJS, fully typed.
+
+## Install
+
+```
+npm install @delhivery-sdk/client
+```
+
+## Docs
+
+- [Getting Started](https://delhivery-sdk.github.io/)
+- [Installation](https://delhivery-sdk.github.io/installation)
+- [Authentication](https://delhivery-sdk.github.io/authentication)
+
+## API Reference
+
+- [Serviceability — pincode check + TAT](https://delhivery-sdk.github.io/api/serviceability)
+- [Orders — create, update, cancel, e-waybill](https://delhivery-sdk.github.io/api/orders)
+- [Tracking — real-time shipment tracking](https://delhivery-sdk.github.io/api/tracking)
+- [Shipping — cost calc, waybills, labels, pickup](https://delhivery-sdk.github.io/api/shipping)
+- [Warehouses — pickup location management](https://delhivery-sdk.github.io/api/warehouses)
+- [NDR & RVP QC — non-delivery & reverse pickup](https://delhivery-sdk.github.io/api/ndr)
+- [Documents — label/invoice/POD downloads](https://delhivery-sdk.github.io/api/documents)
+- [Webhooks — real-time event handling](https://delhivery-sdk.github.io/api/webhooks)
+
+## Guides
+
+- [Create Your First Order](https://delhivery-sdk.github.io/guides/create-first-order)
+- [COD Orders](https://delhivery-sdk.github.io/guides/cod-orders)
+- [Bulk Operations](https://delhivery-sdk.github.io/guides/bulk-operations)
+- [Error Handling](https://delhivery-sdk.github.io/guides/error-handling)
+- [Webhooks Setup](https://delhivery-sdk.github.io/guides/webhooks-setup)
+
+## Optional
+
+- [FAQ](https://delhivery-sdk.github.io/faq)
+- [Changelog](https://delhivery-sdk.github.io/changelog)
