@@ -1,4 +1,4 @@
-name: Deploy Docs to GitHub Pages
+name: Deploy Docs to Cloudflare Pages
 
 on:
   push:
@@ -9,24 +9,21 @@ on:
       - ".github/workflows/deploy-docs.yml"
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: deploy-docs-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build Docusaurus
+  deploy:
+    name: Build & Deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -44,20 +41,12 @@ jobs:
 
       - name: Build docs
         run: pnpm --filter docs build
+        env:
+          DOCS_URL: ${{ vars.DOCS_URL || 'https://delhivery-sdk.pages.dev' }}
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: apps/docs/build
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy apps/docs/build --project-name=delhivery-sdk --commit-dirty=true

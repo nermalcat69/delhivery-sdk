@@ -1,0 +1,7 @@
+name = "delhivery-sdk"
+pages_build_output_dir = "apps/docs/build"
+
+[env.production]
+# Set DOCS_URL in Cloudflare Pages dashboard → Settings → Environment variables
+# e.g. DOCS_URL = https://docs.delhivery-sdk.com  (if using a custom domain)
+#      DOCS_URL = https://delhivery-sdk.pages.dev   (default)

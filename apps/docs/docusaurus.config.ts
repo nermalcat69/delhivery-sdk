@@ -6,12 +6,9 @@ const config: Config = {
   tagline: "TypeScript SDK for the Delhivery B2C API",
   favicon: "img/favicon.ico",
 
-  url: "https://delhivery-sdk.github.io",
+  url: process.env.DOCS_URL ?? "https://delhivery-sdk.pages.dev",
   baseUrl: "/",
 
-  organizationName: "delhivery-sdk",
-  projectName: "delhivery-sdk",
-  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
   onBrokenLinks: "throw",
@@ -69,7 +66,7 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://delhivery-sdk.github.io/llms.txt",
+          href: "https://delhivery-sdk.pages.dev/llms.txt",
           label: "llms.txt",
           position: "right",
         },

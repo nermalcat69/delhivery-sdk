@@ -10,30 +10,30 @@ npm install delhivery-sdk
 
 ## Docs
 
-- [Getting Started](https://delhivery-sdk.github.io/)
-- [Installation](https://delhivery-sdk.github.io/installation)
-- [Authentication](https://delhivery-sdk.github.io/authentication)
+- [Getting Started](https://delhivery-sdk.pages.dev/)
+- [Installation](https://delhivery-sdk.pages.dev/installation)
+- [Authentication](https://delhivery-sdk.pages.dev/authentication)
 
 ## API Reference
 
-- [Serviceability — pincode check + TAT](https://delhivery-sdk.github.io/api/serviceability)
-- [Orders — create, update, cancel, e-waybill](https://delhivery-sdk.github.io/api/orders)
-- [Tracking — real-time shipment tracking](https://delhivery-sdk.github.io/api/tracking)
-- [Shipping — cost calc, waybills, labels, pickup](https://delhivery-sdk.github.io/api/shipping)
-- [Warehouses — pickup location management](https://delhivery-sdk.github.io/api/warehouses)
-- [NDR & RVP QC — non-delivery & reverse pickup](https://delhivery-sdk.github.io/api/ndr)
-- [Documents — label/invoice/POD downloads](https://delhivery-sdk.github.io/api/documents)
-- [Webhooks — real-time event handling](https://delhivery-sdk.github.io/api/webhooks)
+- [Serviceability — pincode check + TAT](https://delhivery-sdk.pages.dev/api/serviceability)
+- [Orders — create, update, cancel, e-waybill](https://delhivery-sdk.pages.dev/api/orders)
+- [Tracking — real-time shipment tracking](https://delhivery-sdk.pages.dev/api/tracking)
+- [Shipping — cost calc, waybills, labels, pickup](https://delhivery-sdk.pages.dev/api/shipping)
+- [Warehouses — pickup location management](https://delhivery-sdk.pages.dev/api/warehouses)
+- [NDR & RVP QC — non-delivery & reverse pickup](https://delhivery-sdk.pages.dev/api/ndr)
+- [Documents — label/invoice/POD downloads](https://delhivery-sdk.pages.dev/api/documents)
+- [Webhooks — real-time event handling](https://delhivery-sdk.pages.dev/api/webhooks)
 
 ## Guides
 
-- [Create Your First Order](https://delhivery-sdk.github.io/guides/create-first-order)
-- [COD Orders](https://delhivery-sdk.github.io/guides/cod-orders)
-- [Bulk Operations](https://delhivery-sdk.github.io/guides/bulk-operations)
-- [Error Handling](https://delhivery-sdk.github.io/guides/error-handling)
-- [Webhooks Setup](https://delhivery-sdk.github.io/guides/webhooks-setup)
+- [Create Your First Order](https://delhivery-sdk.pages.dev/guides/create-first-order)
+- [COD Orders](https://delhivery-sdk.pages.dev/guides/cod-orders)
+- [Bulk Operations](https://delhivery-sdk.pages.dev/guides/bulk-operations)
+- [Error Handling](https://delhivery-sdk.pages.dev/guides/error-handling)
+- [Webhooks Setup](https://delhivery-sdk.pages.dev/guides/webhooks-setup)
 
 ## Optional
 
-- [FAQ](https://delhivery-sdk.github.io/faq)
-- [Changelog](https://delhivery-sdk.github.io/changelog)
+- [FAQ](https://delhivery-sdk.pages.dev/faq)
+- [Changelog](https://delhivery-sdk.pages.dev/changelog)

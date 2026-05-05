@@ -2,7 +2,7 @@
 
 TypeScript SDK for the [Delhivery B2C API](https://one.delhivery.com/developer-portal).
 
-**Full documentation → [delhivery-sdk.github.io](https://delhivery-sdk.github.io)**
+**Full documentation → [delhivery-sdk.pages.dev](https://delhivery-sdk.pages.dev)**
 
 ## Install
 
